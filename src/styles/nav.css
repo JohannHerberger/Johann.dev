@@ -1,0 +1,23 @@
+.nav{
+    background-color: #AAF0FF;
+}
+
+.nav-cont{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    right: 12%;
+    top: 40px;
+    width: 550px;
+    flex-direction: row;
+    list-style: none;
+    margin: 0px;
+    color: #630087;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: "Roboto Mono";
+}
+ .nav-cont >li:hover{
+    cursor: pointer;
+    color: white;
+ }
