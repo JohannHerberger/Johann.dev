@@ -5,6 +5,9 @@ import "../styles/nav.css"
 export function Nav():any {
     return (
         <nav className="nav">
+            <div className="nav-logo">
+                johann.dev
+            </div>
             <ul className="nav-cont">
                 <li>
                     <Link to="home" smooth={true} offset={0} duration={500}>Home</Link>

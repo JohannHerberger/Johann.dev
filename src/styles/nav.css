@@ -2,6 +2,14 @@
     background-color: #AAF0FF;
 }
 
+.nav-logo{
+    margin-left: 12%;
+    color: #630087;
+    font-family: "Seymour One";
+    padding-top: 30px;
+    font-size: 30px;
+}
+
 .nav-cont{
     display: flex;
     justify-content: space-between;

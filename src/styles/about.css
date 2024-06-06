@@ -1,51 +1,45 @@
-.contact{
-    width: 100%;
+.about{
     height: 100vh;
+    padding: 10% 12%;
+}
+
+.about-cont1{
     display: flex;
 }
 
-.contact-text{
-    border: #AAF0FF 5px solid;
-    border-radius: 15px;
-    margin-top: 100px;
-    padding: 20px;
-    margin-left: 12%;
-    margin-right: 5%;
+.about-text{
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
 }
 
-.contact-main{
-    font-size: 20px;
-    font-family: Roboto Mono;
-    font-weight: 800;
-}
-
-.contact-head{
-    font-size: 45px;
+.about-heading{
     font-family: "Seymour One";
     color: #630087;
+    font-size: 45px;
     margin: 0px;
 }
 
-
-.contact-links{
-    display: flex;
-    flex-direction: column;
-    margin-right: 12%;
+.about-info{
+    font-size: 18px;
+    font-family: "Roboto Mono";
+    font-weight: 700;
 }
 
-.contact-button{
-    width: 340px;
+.meta-img{
+    width: 300px;
     border: #AAF0FF 5px solid;
     border-radius: 20px;
-    background-color: white;
 }
 
-.contact-img{
-    width: 300px;
-    height: 180px;
+.about-cont2{
+    display: flex;
+    margin-top: 45px;
 }
 
-.contact-desc{
-    background-color: #AAF0FF;
-    width: 100%;
+.git-img{
+    width: 150px;
+    border: #AAF0FF 5px solid;
+    border-radius: 20px;
+    margin-right: 40px;
 }
