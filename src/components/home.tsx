@@ -6,9 +6,11 @@ import css from "../images/css.png"
 import ts from "../images/icons8-typescript-96.png"
 import react from "../images/icons8-react-80.png"
 import java from "../images/icons8-javascript-96.png"
+import { Link } from "react-scroll"
 
 
 export function Home (){
+
     return (
         <div className="home" id="home">
             <div className="home-cont">
@@ -20,10 +22,12 @@ export function Home (){
                     <h1 className="home-text2">Frontend Developer.</h1>
                 </div>
                 <div className="home-cont2">
-                    <button className="home-but">
-                        mehr
-                        <img src={arrow} className="arrow-icon" />
-                    </button>
+                    <Link to="über" smooth={true} offset={0} duration={500}>
+                        <button className="home-but">
+                            mehr
+                            <img src={arrow} className="arrow-icon" />
+                        </button>
+                    </Link>
                     <div className="home-icon-cont">
                         <img className="dev-icon" src={html} />
                         <img className="dev-icon" src={css} />

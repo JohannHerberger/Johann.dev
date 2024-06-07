@@ -1,4 +1,62 @@
 .project{
     height: 100vh;
-    
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+.project-heading{
+    font-family: "Seymour One";
+    color: #630087;
+    font-size: 45px;
+    margin: 0px;
+}
+
+.project-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.project-cont{
+    background-color: #AAF0FF;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(193, 193, 193);
+    width: 30%;
+}
+
+.project-img{
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.project-desc{
+    font-family: "Roboto Mono";
+    padding: 20px 15px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #630087;
+}
+
+.project-button-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-button1, .project-button2{
+    display: flex;
+    align-items: center;
+    background-color: #630087;
+    border: none;
+    padding: 2% 5%;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Seymour One";
+}
+
+.preview-icon{
+    width: 20%;
+    margin-right: 5px;
 }

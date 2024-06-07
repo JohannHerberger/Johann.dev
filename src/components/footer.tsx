@@ -1,8 +1,9 @@
 import "../styles/footer.css"
+import { Link } from "react-scroll"
 
 export function Footer (){
     return(
-        <footer className="footer">
+        <footer id="footer" className="footer">
             <div className="footer-line"></div>
             <div className="footer-cont">
                 <div className="footer-logo">
@@ -11,10 +12,18 @@ export function Footer (){
                 <div className="footer-nav">
                     <h2 className="footer-nav-heading">Navigation</h2>
                     <ul className="footer-nav-text">
-                        <li>Home</li>
-                        <li>Über</li>
-                        <li>Projekte</li>
-                        <li>Kontakt</li>
+                        <li>
+                            <Link to="home" smooth={true} offset={0} duration={500}>Home</Link>
+                        </li>
+                        <li>
+                            <Link to="über" smooth={true} offset={0} duration={500}>Über</Link>
+                        </li>
+                        <li>
+                            <Link to="projekt" smooth={true} offset={0} duration={500}>Projekte</Link>
+                        </li>
+                        <li>
+                            <Link to="kontakt" smooth={true} offset={0} duration={500}>Kontakt</Link>
+                        </li>
                     </ul>
                 </div>
                 <div className="footer-contact">
