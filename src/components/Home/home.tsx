@@ -1,18 +1,18 @@
-import "../styles/home.css"
-import mann from "../images/61d24b3d-4b3d-4592-a887-9b90c4c8925c_w960_r1.778_fpx36_fpy50.jpg"
-import arrow from "../images/arrow-down.png"
-import html from "../images/html5.png"
-import css from "../images/css.png"
-import ts from "../images/icons8-typescript-96.png"
-import react from "../images/icons8-react-80.png"
-import java from "../images/icons8-javascript-96.png"
+import "../../styles/home.css"
+import mann from "../../images/61d24b3d-4b3d-4592-a887-9b90c4c8925c_w960_r1.778_fpx36_fpy50.jpg"
+import arrow from "../../images/arrow-down.png"
+import html from "../../images/html5.png"
+import css from "../../images/css.png"
+import ts from "../../images/icons8-typescript-96.png"
+import react from "../../images/icons8-react-80.png"
+import java from "../../images/icons8-javascript-96.png"
 import { Link } from "react-scroll"
 
 
 export function Home (){
 
     return (
-        <div className="home" id="home">
+        <div className="home">
             <div className="home-cont">
                 <img className="home-img" src={mann}/>
                 <div className="home-text">

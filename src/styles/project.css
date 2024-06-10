@@ -20,7 +20,7 @@
 .project-cont{
     background-color: #AAF0FF;
     border-radius: 20px;
-    box-shadow: 5px 5px 5px rgb(193, 193, 193);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     width: 30%;
 }
 
