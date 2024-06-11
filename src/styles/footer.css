@@ -1,6 +1,5 @@
 .footer{
     height: 300px;
-    background-color: #AAF0FF;
 }
 
 .footer-line{
@@ -51,4 +50,58 @@
 .footer-nav-text > li:hover{
     text-decoration: underline;
     cursor: pointer;
+}
+
+
+
+
+@media (max-width:1025px) and (min-width:645px){
+    .footer-line{
+        margin: 0;
+    }
+
+    .footer-logo{
+        display: none;
+    }
+
+    .footer-nav{
+        margin-left: 0px;
+    }
+
+    .footer-nav-heading, .footer-cont-heading{
+        font-size: 22px;
+    }
+
+    .footer-nav-text, .footer-cont-text{
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 645px){
+
+    .footer-line{
+        margin: 0;
+    }
+
+    .footer-cont{
+        flex-direction: column;
+    }
+
+    .footer-logo{
+        display: none;
+    }
+
+    .footer-nav{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .footer-nav-heading, .footer-cont-heading{
+        font-size: 22px;
+    }
+
+    .footer-nav-text, .footer-cont-text{
+        font-size: 18px;
+    }
 }

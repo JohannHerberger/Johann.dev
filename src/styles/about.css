@@ -1,21 +1,12 @@
 .about{
-    padding: 7% 15%;
+    padding: 10% 12%;
 }
 
 .about-cont1{
-    display: flex;
 }
 
 .about-cont2{
-    display: flex;
     margin-top: 45px;
-}
-
-
-.about-text{
-    display: flex;
-    flex-direction: column;
-    margin-right: 40px;
 }
 
 .about-heading{
@@ -26,10 +17,10 @@
 }
 
 .about-info1{
+    display: flex;
     font-size: 19px;
     font-family: "Roboto Mono";
     font-weight: 700;
-    display: flex;
 }
 
 .about-info{
@@ -40,7 +31,7 @@
 
 .meta-img, .meta-img-active{
     transition: all 0.3s;
-    margin-left: 10px;
+    margin: 10px;
     width: 350px;
     height: 250px;
     float: right;
@@ -58,7 +49,8 @@
 .git-img, .git-img-active{
     height: 250px;
     width: 250px;
-    margin-right: 40px;
+    margin: 10px;
+    float: left;
 }
 
 .git-img-active{
@@ -80,4 +72,65 @@
 
 .about-links:hover{
     cursor: pointer;
+}
+
+
+@media (max-width:1025px) and (min-width:645px){
+
+    .about{
+        padding: 10% 7%;
+    }
+
+    .about-heading{
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    .about-info{
+        font-size: 15px;
+    }
+
+    .about-info1{
+        font-size: 15px;
+    }
+
+    .meta-img, .meta-img-active{
+        width: 270px;
+        height: 170px;
+    }
+
+    .git-img, .git-img-active{
+        height: 160px;
+        width: 160px;
+    }
+}
+
+
+@media (max-width: 645px){
+    .about{
+        padding: 10% 6%;
+    }
+
+    .about-heading{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .about-info{
+        font-size: 12px;
+    }
+
+    .about-info1{
+        font-size: 12px;
+    }
+
+    .meta-img, .meta-img-active{
+        width: 180px;
+        height: 100px;
+    }
+
+    .git-img, .git-img-active{
+        height: 100px;
+        width: 100px;
+    }
 }

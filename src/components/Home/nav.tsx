@@ -49,20 +49,22 @@ export function Nav() {
                 <button onClick={()=> normalNav()} className={nav ? "nav-icon-button2" : "passiv"}>
                     <img className="cross" src={cross} />
                 </button>
-                <ul className={nav ? "mobile-nav-cont" : "passiva"}>
-                    <li>
-                        <Link onClick={()=> steNav(false)} to="home" smooth={true} offset={0} duration={500}>Home</Link>
-                    </li>
-                    <li>
-                        <Link onClick={()=> steNav(false)} to="über" smooth={true} offset={0} duration={500}>Über</Link>
-                    </li>
-                    <li>
-                        <Link onClick={()=> steNav(false)} to="projekt" smooth={true} offset={0} duration={500}>Projekte</Link>
-                    </li>
-                    <li>
-                        <Link onClick={()=> steNav(false)} to="kontakt" smooth={true} offset={0} duration={500}>Kontakt</Link>
-                    </li>
-                </ul>
+                <div className={nav ? "nav-background" : "nav-background-passiv"}>
+                    <ul className={nav ? "mobile-nav-cont" : "mobile-nav-cont-passiv"}>
+                        <li>
+                            <Link onClick={()=> steNav(false)} to="home" smooth={true} offset={0} duration={500}>Home</Link>
+                        </li>
+                        <li>
+                            <Link onClick={()=> steNav(false)} to="über" smooth={true} offset={0} duration={500}>Über</Link>
+                        </li>
+                        <li>
+                            <Link onClick={()=> steNav(false)} to="projekt" smooth={true} offset={0} duration={500}>Projekte</Link>
+                        </li>
+                        <li>
+                            <Link onClick={()=> steNav(false)} to="kontakt" smooth={true} offset={0} duration={500}>Kontakt</Link>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     )

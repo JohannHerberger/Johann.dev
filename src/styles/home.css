@@ -2,11 +2,12 @@
     width: 100%;
     height: 100vh;
     background-color: #AAF0FF;
+    display: flex;
+    align-items: center;
 }
 
 .home-cont{
-    margin-left: 12%;
-    padding-top: 150px;
+    padding: 12% 12%;
 }
 
 .home-img{
@@ -46,7 +47,7 @@
 }
 
 .dev-icon{
-    width: 40px;
+    width: 60px;
 }
 
 .home-but{
@@ -70,4 +71,81 @@
 .arrow-icon{
     width: 28px;
     padding-left: 5px;
+}
+
+
+@media (max-width:1025px) and (min-width:645px){
+
+    .home-cont{
+        padding: 12% 7%;
+    }
+
+    .home-img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .home-text{
+        line-height: 240%;
+    }
+
+    .home-text2{
+        font-size: 42px;
+    }
+
+    .home-text1{
+        font-size: 20px;
+    }
+
+    .home-but{
+        padding: 15px 15px;
+        font-size: 20px;
+    }
+
+    .arrow-icon{
+        width: 20px;
+    }
+
+    .dev-icon{
+        width: 50px;
+    }
+}
+
+
+@media (max-width: 645px){
+
+    .home-cont{
+        padding: 6% 6%;
+    }
+
+    .home-img{
+        width: 160px;
+        height: 160px;
+    }
+
+    .home-text{
+        line-height: 180%;
+    }
+
+    .home-text2{
+        font-size: 35px;
+    }
+
+    .home-text1{
+        font-size: 17px;
+    }
+
+    .dev-icon{
+        width: 30px;
+        height: 30px;
+    }
+
+    .home-but{
+        padding: 10px 15px;
+        font-size: 17px;
+    }
+
+    .arrow-icon{
+        width: 20px;
+    }
 }

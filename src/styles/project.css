@@ -1,7 +1,5 @@
 .project{
-    height: 100vh;
-    padding-left: 12%;
-    padding-right: 12%;
+    padding: 6% 12%;
 }
 
 .project-heading{
@@ -11,17 +9,20 @@
     margin: 0px;
 }
 
-.project-wrapper{
+.projects-wrapper{
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
 }
 
-.project-cont{
-    background-color: #AAF0FF;
+.card{
     border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    width: 30%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 31%;
+}
+
+.project-content{
+    padding: 8% 5%;
 }
 
 .project-img{
@@ -32,10 +33,10 @@
 
 .project-desc{
     font-family: "Roboto Mono";
-    padding: 20px 15px;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 700;
     color: #630087;
+    padding-bottom: 30px;
 }
 
 .project-button-wrapper{
@@ -43,20 +44,139 @@
     justify-content: space-between;
 }
 
-.project-button1, .project-button2{
+.project-button1{
     display: flex;
     align-items: center;
     background-color: #630087;
     border: none;
-    padding: 2% 5%;
+    padding: 5% 5%;
     border-radius: 10px;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     font-family: "Seymour One";
+}
+
+.project-button2{
+    display: flex;
+    align-items: center;
+    background-color: #630087;
+    border: none;
+    padding: 5% 5%;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Seymour One";
+    margin-left: 10px;
+}
+
+.project-button1:hover, .project-button2:hover{
+    cursor: pointer;
+    opacity: 60%;
 }
 
 .preview-icon{
     width: 20%;
     margin-right: 5px;
+}
+
+
+
+@media (max-width:1025px) and (min-width:645px){
+
+    .project{
+        padding: 6% 7%;
+    }
+
+    .projects-wrapper{
+        flex-direction: column;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .project-heading{
+        font-size: 35px;
+    }
+
+    .card{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .project-content{
+        padding: 5% 10%;
+    }
+
+    .project-desc{
+        font-size: 15px;
+        padding-bottom: 20px;
+    }
+
+    .project-button1{
+        padding: 3% 5%;
+        border-radius: 10px;
+        font-size: 17px;
+    }
+    
+    .project-button2{
+        padding: 3% 5%;
+        border-radius: 10px;
+        font-size: 17px;
+        width: 56%;
+    }
+}
+
+
+@media (max-width: 645px){
+
+    .project{
+        padding: 6% 6%;
+    }
+
+    .projects-wrapper{
+        flex-direction: column;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .project-heading{
+        font-size: 30px;
+    }
+
+    .card{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .project-content{
+        padding: 5% 6%;
+    }
+
+    .project-desc{
+        font-size: 12px;
+        padding-bottom: 20px;
+    }
+
+    .project-button1{
+        padding: 3% 5%;
+        border-radius: 10px;
+        font-size: 13px;
+    }
+    
+    .project-button2{
+        padding: 3% 5%;
+        border-radius: 10px;
+        font-size: 12px;
+        width: 56%;
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 400px){
+    .project-button2{
+        padding: 3% 5%;
+        margin-left: 2px;
+        flex-direction: column;
+    }
 }

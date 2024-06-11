@@ -1,6 +1,5 @@
 .contact{
-    padding: 8% 12%;
-    background-color: #AAF0FF;
+    padding: 12% 12%;
 }
 
 .contact-heading{
@@ -27,7 +26,6 @@
     width: 80%;
     height: 40px;
     border: #630087 2px solid;
-    background-color: #AAF0FF;
     border-radius: 10px;
     font-size: 18px;
     padding-left: 8px;
@@ -36,7 +34,6 @@
 .form-input2{
     width: 80%;
     border: #630087 2px solid;
-    background-color: #AAF0FF;
     border-radius: 10px;
     font-size: 18px;
     padding-left: 8px;
@@ -73,4 +70,46 @@
 .contact-phone:hover{
     color: #bb00ff;
     cursor: pointer;
+}
+
+
+
+@media (max-width:1025px) and (min-width:645px){
+    .contact{
+        padding: 15% 7%;
+    }
+
+    .contact-heading{
+        font-size: 35px;
+    }
+}
+
+
+@media (max-width: 645px){
+    .contact{
+        padding: 12% 6%;
+    }
+
+    .contact-heading{
+        font-size: 30px;
+    }
+
+    .form-label{
+        font-size: 18px;
+    }
+
+    .form-input1, .form-input2{
+        padding-left: 2%;
+        width: 98%;
+    }
+
+    .form-button{
+        width: 150px;
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+
+    .contact-phone{
+        font-size: 16px;
+    }
 }
