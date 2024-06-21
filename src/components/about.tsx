@@ -1,8 +1,9 @@
 import "../styles/about.css"
-import github from "../images/github(1).png"
 import certificatSmall from "../images/22F34CFC-AFDD-4984-BDC4-1B79B0E561A2_1_201_a.jpeg"
 import certficateBig from "../images/Bildschirmfoto 2024-06-11 um 03.22.08.png"
-import { useState } from "react"
+import { useEffect, useState } from "react"
+import "aos/dist/aos.css"
+import AOS from "aos"
 
 export function Über (){
     const [git, setGit] = useState(false)
@@ -14,8 +15,9 @@ export function Über (){
         setTimeout(()=>{setGit(false)}, 2000 )
     }
 
+
     return (
-        <div onClick={reset} className="about" id="über">
+        <div id="über" onClick={reset} className="about" data-aos="zoom-in">
             <header>
                     <h1 className="about-heading">Über mich</h1>
             </header>
@@ -29,13 +31,11 @@ export function Über (){
                     bei dem ich selbständig arbeiten kann und für den ich kein komplettes Studium absolvieren muss, 
                     bin ich auf das Thema Informatik bzw. Frontend Development zurückgekommen. 
                     Schließlich begann ich damit, Frontend Development mithilfe verschiedenster Tutorials 
-                    zu lernen und es begann mir auf einmal Spaß zu bringen.<p></p> Mitlerweile b 
-                    <a href="https://github.com/JohannHerberger">
-                        <img src={github} className={git ? "git-img-active" : "git-img"} />
-                    </a>
-                    in ich 18 Jahre alt, mein Abitur ist fast fertig und ich kann stolz sagen,
+                    zu lernen und es begann mir auf einmal Spaß zu bringen.
+                    <p></p>
+                    Mitlerweile bin ich 18 Jahre alt, mein Abitur ist fast fertig und ich kann stolz sagen,
                     dass ich ein gutes Verständnis von HTML, CSS, Github 
-                    <a className="about-links" onClick={()=> setGit(true)}>
+                    <a target="_blank" href="https://github.com/JohannHerberger" className="about-links" onClick={()=> setGit(true)}>
                          (zum Rrofil)
                     </a>
                     , JavaScript, Typescript und React,

@@ -1,12 +1,45 @@
 import { Link } from "react-scroll"
-import "../../styles/nav.css"
+import "../styles/nav.css"
 import { useState } from "react"
-import hamburger from "../../images/icons8-menü-50.png"
-import cross from "../../images/icons8-multiplizieren-50.png"
+import hamburger from "../images/icons8-menü-50.png"
+import cross from "../images/icons8-multiplizieren-50.png"
+import { useEffect } from "react"
+import AOS from "aos"
 
 
 export function Nav() {
     const [nav, steNav] = useState(false)
+    const [shadow, setShadow] = useState(false)
+    const [animation, setAnimation] = useState(false)
+
+    /*Scroll animation*/
+    useEffect(()=>{
+        AOS.init({duration: 1700, disable:"mobile", once: true})
+    },[])
+
+    /* Functions for Box-shadow Nav*/
+
+    window.addEventListener("scroll", function (){
+        if (this.window.scrollY > 100 ){
+            setShadow(true)
+        } else {
+            setShadow(false)
+        }
+    })
+
+    function navStyle (){
+        if (nav === true && shadow === true){
+            return "mobile-nav-active shadow"
+        } else if (nav === false && shadow === false){
+            return "mobile-nav"
+        } else if (nav === true && shadow === false){
+            return "mobile-nav-active"
+        } else if (nav === false && shadow === true){
+            return "mobile-nav shadow"
+        }
+    }
+
+    /* Functions for mobile Nav*/
 
     function mobileNav (){
         steNav(true)
@@ -20,7 +53,7 @@ export function Nav() {
 
     return (
         <nav>
-            <div className="nav">
+            <div className={shadow ? "nav shadow" : "nav"}>
                 <div className="nav-logo">
                     johann.dev
                 </div>
@@ -39,7 +72,7 @@ export function Nav() {
                     </li>
                 </ul>
             </div>
-            <div className={nav ? "mobile-nav-active" : "mobile-nav"}>
+            <div className={navStyle()}>
                 <div className="nav-logo">
                     johann.dev
                 </div>

@@ -1,5 +1,6 @@
 import "../styles/footer.css"
 import { Link } from "react-scroll"
+import git from "../images/github(1).png"
 
 export function Footer (){
     return(
@@ -34,6 +35,9 @@ export function Footer (){
                     <div className="footer-cont-text">
                         j.herberger50@gmail.com
                     </div>
+                    <a target="_blank" href="https://github.com/JohannHerberger">
+                        <img className="footer-icon" src={git}/>
+                    </a>
                 </div>
             </div>
         </footer>

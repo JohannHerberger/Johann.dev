@@ -1,12 +1,9 @@
 .about{
-    padding: 10% 12%;
-}
-
-.about-cont1{
-}
-
-.about-cont2{
-    margin-top: 45px;
+    height: 100vh;
+    padding: 0% 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .about-heading{
@@ -16,17 +13,11 @@
     margin: 0px;
 }
 
-.about-info1{
-    display: flex;
-    font-size: 19px;
-    font-family: "Roboto Mono";
-    font-weight: 700;
-}
-
 .about-info{
     font-size: 19px;
     font-family: "Roboto Mono";
     font-weight: 700;
+    color: #630087;
 }
 
 .meta-img, .meta-img-active{
@@ -35,8 +26,8 @@
     width: 350px;
     height: 250px;
     float: right;
-    border: 3px solid #AAF0FF;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     /*border: 5px solid #AAF0FF;
     border-radius: 10px;*/
 }
@@ -46,26 +37,14 @@
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.git-img, .git-img-active{
-    height: 250px;
-    width: 250px;
-    margin: 10px;
-    float: left;
-}
-
-.git-img-active{
-    transition: all 0.3s;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-.meta-img:hover, .git-img:hover{
+.meta-img:hover{
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .about-links{
     text-decoration: underline;
-    color: #630087;
+    color: #4a8a98;
     font-weight: 900;
     display: inline-block;
 }
@@ -90,18 +69,9 @@
         font-size: 15px;
     }
 
-    .about-info1{
-        font-size: 15px;
-    }
-
     .meta-img, .meta-img-active{
         width: 270px;
         height: 170px;
-    }
-
-    .git-img, .git-img-active{
-        height: 160px;
-        width: 160px;
     }
 }
 
@@ -119,18 +89,10 @@
     .about-info{
         font-size: 12px;
     }
-
-    .about-info1{
-        font-size: 12px;
-    }
-
+    
     .meta-img, .meta-img-active{
         width: 180px;
         height: 100px;
     }
 
-    .git-img, .git-img-active{
-        height: 100px;
-        width: 100px;
-    }
 }

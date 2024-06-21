@@ -1,14 +1,18 @@
 import "../styles/project.css"
 import littleLemon from "../images/google-logo.jpeg"
 import preview from "../images/icons8-live-50.png"
+import "aos/dist/aos.css"
+import AOS from "aos"
+import { useEffect } from "react"
 
 const Projekte = () => {
+
     return (
-        <div className="project" id="projekt">
+        <div className="project" id="projekt" data-aos="zoom-in-right">
             <header>
                 <h1 className="project-heading">Meine Projekte</h1>
             </header>
-            <div className="projects-wrapper">
+            <div className="projects-wrapper" data-aos="flip-left">
                 <div className="card">
                     <img src={littleLemon} className="project-img"/>
                     <div className="project-content">
