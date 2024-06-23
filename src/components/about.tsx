@@ -3,7 +3,6 @@ import certificatSmall from "../images/22F34CFC-AFDD-4984-BDC4-1B79B0E561A2_1_20
 import certficateBig from "../images/Bildschirmfoto 2024-06-11 um 03.22.08.png"
 import { useEffect, useState } from "react"
 import "aos/dist/aos.css"
-import AOS from "aos"
 
 export function Über (){
     const [git, setGit] = useState(false)
@@ -17,7 +16,7 @@ export function Über (){
 
 
     return (
-        <div id="über" onClick={reset} className="about" data-aos="zoom-in">
+        <section id="über" onClick={reset} className="about" data-aos="zoom-in">
             <header>
                     <h1 className="about-heading">Über mich</h1>
             </header>
@@ -49,6 +48,6 @@ export function Über (){
                     und kann auch hier schon Grundverständnisse im Bereich MySQL und Python vorweisen.
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

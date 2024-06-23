@@ -2,13 +2,11 @@ import "../styles/project.css"
 import littleLemon from "../images/google-logo.jpeg"
 import preview from "../images/icons8-live-50.png"
 import "aos/dist/aos.css"
-import AOS from "aos"
-import { useEffect } from "react"
 
 const Projekte = () => {
 
     return (
-        <div className="project" id="projekt" data-aos="zoom-in-right">
+        <section className="project" id="projekt" data-aos="zoom-in-right">
             <header>
                 <h1 className="project-heading">Meine Projekte</h1>
             </header>
@@ -59,7 +57,7 @@ const Projekte = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

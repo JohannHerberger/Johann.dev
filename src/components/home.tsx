@@ -8,16 +8,9 @@ import react from "../images/icons8-react-80.png"
 import java from "../images/icons8-javascript-96.png"
 import { Link } from "react-scroll"
 import "aos/dist/aos.css"
-import AOS from "aos"
-import { useEffect } from "react"
 
 
 export function Home (){
-
-    /*Scroll animation*/
-    useEffect(()=>{
-        AOS.init({duration: 1700, disable:"mobile", once: true})
-    },[])
 
     return (
         <div id="home" className="home">
