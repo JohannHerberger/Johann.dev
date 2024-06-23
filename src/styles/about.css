@@ -1,6 +1,6 @@
 .about{
     height: 100vh;
-    padding: 0% 12%;
+    padding: 5% 12%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,42 +57,44 @@
 @media (max-width:1025px) and (min-width:645px){
 
     .about{
+        height: auto;
         padding: 10% 7%;
     }
 
     .about-heading{
         font-size: 35px;
-        margin-bottom: 20px;
     }
 
     .about-info{
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .meta-img, .meta-img-active{
-        width: 270px;
-        height: 170px;
+        width: 100%;
+        height: auto;
+        margin: 15px 0px;
     }
 }
 
 
 @media (max-width: 645px){
     .about{
+        height: auto;
         padding: 10% 6%;
     }
 
     .about-heading{
-        font-size: 30px;
-        margin-bottom: 10px;
+        font-size: 35px;
     }
 
     .about-info{
-        font-size: 12px;
+        font-size: 13px;
     }
-    
+
     .meta-img, .meta-img-active{
-        width: 180px;
-        height: 100px;
+        width: 100%;
+        height: auto;
+        margin: 15px 0px;
     }
 
 }

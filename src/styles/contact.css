@@ -1,6 +1,6 @@
 .contact{
     height: 100vh;
-    padding: 0% 12%;
+    padding: 5% 12%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -81,22 +81,33 @@
 
 @media (max-width:1025px) and (min-width:645px){
     .contact{
-        padding: 15% 7%;
+        padding: 10% 7%;
+        height: auto;
     }
 
     .contact-heading{
         font-size: 35px;
+    }
+
+    .form-input1, .form-input2{
+        padding-left: 2%;
+        width: 98%;
+    }
+
+    .contact-phone{
+        font-size: 15px;
     }
 }
 
 
 @media (max-width: 645px){
     .contact{
-        padding: 12% 6%;
+        padding: 10% 6%;
+        height: auto;
     }
 
     .contact-heading{
-        font-size: 30px;
+        font-size: 35px;
     }
 
     .form-label{
@@ -115,6 +126,7 @@
     }
 
     .contact-phone{
-        font-size: 16px;
+        margin-left: 8px;
+        font-size: 13px;
     }
 }

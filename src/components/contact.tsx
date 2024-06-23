@@ -34,7 +34,7 @@ function Kontakt (){
     return (
         <div className="contact" id="kontakt" data-aos="fade-up">
             <header>
-                <h1 className="contact-heading">Kontaktieren sie mich</h1>
+                <h1 className="contact-heading">Kontakt</h1>
             </header>
             <section>
                 <form className="form" onSubmit={handleSubmit} data-aos="fade-up" >

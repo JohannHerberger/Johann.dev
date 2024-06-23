@@ -17,7 +17,7 @@ export function Nav() {
         AOS.init({duration: 1700, disable:"mobile", once: true})
     },[])
 
-    /* Functions for Box-shadow Nav*/
+    /* Functions for Box-shadow on scroll Navbar*/
 
     window.addEventListener("scroll", function (){
         if (this.window.scrollY > 100 ){

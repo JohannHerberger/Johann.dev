@@ -3,6 +3,7 @@ import certificatSmall from "../images/22F34CFC-AFDD-4984-BDC4-1B79B0E561A2_1_20
 import certficateBig from "../images/Bildschirmfoto 2024-06-11 um 03.22.08.png"
 import { useEffect, useState } from "react"
 import "aos/dist/aos.css"
+import { Link } from "react-scroll"
 
 export function Über (){
     const [git, setGit] = useState(false)
@@ -22,7 +23,7 @@ export function Über (){
             </header>
             <div className="about-cont">
                 <a href={certficateBig} target="_blank" className={img ? "certificat-active" : "certificat-passiv"}>
-                    <img onClick={()=> setImg(true)} src={certificatSmall} className={meta ? "meta-img-active" : "meta-img"} />
+                    <img id="certificate" onClick={()=> setImg(true)} src={certificatSmall} className={meta ? "meta-img-active" : "meta-img"} />
                 </a>
                 <div className="about-info">
                     "Langweilig" dachte ich mir, als ich Informatik mit 14 Jahren in der Schule hatte. 
@@ -40,9 +41,9 @@ export function Über (){
                     , JavaScript, Typescript und React,
                     sowie Wissen über die Grundlagen von UX/UI Design habe.
                     Durch meine absolvierten Kurse
-                    <a className="about-links" onClick={()=> setMeta(true)}>
+                    <Link to="certificate" className="about-links" onClick={()=> setMeta(true)}>
                         (siehe Zertifikat)
-                    </a>
+                    </Link>
                     , in Kombination mit viel praktischem Coden konnte ich viel lernen, sodass ich mich bereit dafür fühle, 
                     den ersten Job auszuüben. Außerdem arbeite ich aktuell daran, mir das Backend Development beizubringen 
                     und kann auch hier schon Grundverständnisse im Bereich MySQL und Python vorweisen.
